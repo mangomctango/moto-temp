@@ -100,7 +100,7 @@ void setup() {
   display.display();
   display.drawBitmap(0, 0, drawBitmap, 128, 64, WHITE); // display.drawBitmap(x position, y position, bitmap data, bitmap width, bitmap height, color)
   display.display();
-  delay(3000);
+  delay(300);
   display.clearDisplay();
   display.display();
   display.setTextSize(1);
@@ -108,7 +108,7 @@ void setup() {
   display.setCursor(27,30);
   display.print("setup dunno");
   display.display();
-  delay(2000);
+  delay(300);
 
  }
 
@@ -138,23 +138,25 @@ void loop()
   if (buttonPushCounter % 2 == 0) 
   {
   display.clearDisplay();
+    display.setTextSize(2);
+  display.setCursor(32,0);
+  display.print("WATER");
   display.setTextSize(6);
   display.setCursor(27,17);
-  display.clearDisplay();
   display.print(h);
-  display.display();
+   display.display();
 
  } 
   
   else 
   {
   display.clearDisplay();
-  
+   display.setTextSize(2);
+  display.setCursor(46,0);
+  display.print("AIR");  
   display.setTextSize(6);
   display.setCursor(27,17);
-  display.clearDisplay();
   display.print(f);
-  display.print("°F");
   display.display();
   }
 
