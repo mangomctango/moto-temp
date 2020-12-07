@@ -92,7 +92,6 @@ void setup() {
   pinMode(buttonPin, INPUT);
   display.begin(SSD1306_SWITCHCAPVCC, OLED_ADDR);
   display.clearDisplay();
-  display.print("higher");
   display.setTextSize(1);
   display.setTextColor(WHITE);
   display.setCursor(27,30);
@@ -100,7 +99,7 @@ void setup() {
   display.display();
   display.drawBitmap(0, 0, drawBitmap, 128, 64, WHITE); // display.drawBitmap(x position, y position, bitmap data, bitmap width, bitmap height, color)
   display.display();
-  delay(300);
+  delay(3000);
   display.clearDisplay();
   display.display();
   display.setTextSize(1);
@@ -108,7 +107,7 @@ void setup() {
   display.setCursor(27,30);
   display.print("setup dunno");
   display.display();
-  delay(300);
+  delay(3000);
 
  }
 
